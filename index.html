@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test git</title>
+    <title>Hardware Array Processor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>test git</h1>
+    <h1>Hardware Array Processor</h1>
+
+    <div>
+        <label for="arrayInput">Enter 10 items (comma separated):</label>
+        <input type="text" id="arrayInput" placeholder="e.g. 1, 2, hello, world, 3.5">
+    </div>
+
+    <div>
+        <label for="hardwareSelect">Select Hardware:</label>
+        <select id="hardwareSelect">
+            <option value="CPU">CPU</option>
+            <option value="GPU">GPU</option>
+            <option value="FPGA">FPGA</option>
+        </select>
+    </div>
+
+    <button onclick="processArray()">Process</button>
+
+    <h2>Result:</h2>
+    <div id="result"></div>
+
+    <script src="app.js"></script>
 </body>
 </html>
